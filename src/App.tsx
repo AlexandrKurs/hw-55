@@ -1,22 +1,12 @@
-import './App.css';
+import React from 'react';
+import IngredientsMenu from './components/IngredientsMenu';
 
-const App = () => {
-
-  return (
-
-      <div className="Burger">
-        <div className="BreadTop">
-          <div className="Seeds1"></div>
-          <div className="Seeds2"></div>
+const App: React.FC = () => {
+    return (
+        <div>
+            <IngredientsMenu />
         </div>
-        <div className="Salad"></div>
-        <div className="Cheese"></div>
-        <div className="Meat"></div>
-        <div className="Bacon"></div>
-        <div className="BreadBottom"></div>
-      </div>
-
-  )
+    );
 };
 
 export default App;
