@@ -81,7 +81,7 @@ const IngredientsMenu: React.FC = () => {
                 })}
             </div>
 
-            <h2>Total Price: {totalPrice} kgs</h2>
+            <h2 className="price">Total Price: {totalPrice} kgs</h2>
 
             <Burger ingredients={ingredients} />
         </div>

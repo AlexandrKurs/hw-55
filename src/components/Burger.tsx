@@ -12,7 +12,7 @@ interface BurgerProps {
 const Burger: React.FC<BurgerProps> = ({ ingredients }) => {
     return (
         <div className="Burger">
-            <h2>Burger</h2>
+            <h3 className="title">Burger</h3>
             <div className="BreadTop">
                 <div className="Seeds1"></div>
                 <div className="Seeds2"></div>

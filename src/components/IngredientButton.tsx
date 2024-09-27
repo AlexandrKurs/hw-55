@@ -11,12 +11,12 @@ interface IngredientButtonProps {
 
 const IngredientButton: React.FC<IngredientButtonProps> = ({ name, price, image, count, onAdd, onRemove }) => {
     return (
-        <div>
-            <button onClick={() => onAdd(name)}>
+        <div className="btns">
+            <button className="btn" onClick={() => onAdd(name)}>
                 <img className="image" src={image} alt={name} />
-                <span>{name} - {price} kgs</span>
+                <span className="name">{name} - {price} kgs</span>
             </button>
-            <span>x {count}</span>
+            <span className="count">x {count}</span>
             <button onClick={() => onRemove(name)} disabled={count === 0}>
                 X
             </button>
